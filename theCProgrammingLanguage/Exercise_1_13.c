@@ -7,6 +7,7 @@ main(void)
     int c;
     int wArray[MAXWORD];
     int nCount;
+    int i;
 
     /* initialize the counter array */
     /*
@@ -18,9 +19,9 @@ main(void)
 
     nCount = 0;
     wArray[nCount] = 0;
-    while((c=getchar() != EOF))
+    while((c=getchar()) != EOF)
     {
-	if((c == ' ') || (c == '\n') || (c == '\t'))
+	if(c == ' ' || c == '\n' || c == '\t')
 	{
 	    nCount++;
 	    wArray[nCount] = 0; /* initialize the counter */
@@ -30,9 +31,12 @@ main(void)
 	    ++wArray[nCount];
 	}
     }
-
-    int i;
-    for(i=0; i<nCount;i++)
+    
+    for(i = 0; i < nCount; ++i)
+    {
+	printf("the niumber is %d\n", wArray[i]);
+    }
+    
 }
 
 
