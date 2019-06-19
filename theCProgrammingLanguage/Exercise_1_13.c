@@ -34,11 +34,7 @@ main(void)
     
     for(i = 0; i < nCount; ++i)
     {
-	printf("the niumber is %d\n", wArray[i]);
+	printf("the word length of each word is %d\n", wArray[i]);
     }
     
 }
-
-
-
-
