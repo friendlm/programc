@@ -2,6 +2,7 @@
 
 #define FLOW 0            /* the lowest Fahrenheit value */
 #define FHIGH 300         /* the highest Fahrenheit value */
+#define STEPS 20
 
 /* declare the transfer function to transfer fahrenheit temperature to celsius temperature */
 float fahrenheit_to_celsius(int fahrenheit);
@@ -11,7 +12,7 @@ main()
     float celsius;
     int i;
 
-    for(i = 0; i <= 300; i+=20)
+    for(i = FLOW; i <= FHIGH; i+=STEPS)
     {
 	celsius = fahrenheit_to_celsius(i);
 	printf("%3d %8.1f\n", i, celsius);
