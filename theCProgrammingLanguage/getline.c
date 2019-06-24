@@ -27,12 +27,14 @@ main()
     }
     return 0;
 }
-int getlines(char linestr[], int limitation)
+
+/*
+int getlines(char linestr[], int limitation) // not sure what is wrong, this function does now works fine
 {
     int i, c;
 
     i = 0;
-    while((c=getchar()) != EOF && i < limitation - 1)
+    while((c=getchar()) != EOF && i < limitation - 1 )
     {
 	if(c == '\n')
 	{
@@ -48,6 +50,30 @@ int getlines(char linestr[], int limitation)
 	}
     }
 }
+*/
+
+int getlines(char linestr[], int limitation)
+{
+    int i, c;
+
+    i = 0;
+    while((c=getchar()) != EOF && i < limitation - 1 && c != '\n')
+    {
+	
+	linestr[i] = c;
+	++i;
+    }
+    
+    if(c == '\n')
+    {
+	linestr[i] = c;
+	++i;
+    }
+
+    linestr[i] = c;
+    return i;
+}
+
 
 
 /*
