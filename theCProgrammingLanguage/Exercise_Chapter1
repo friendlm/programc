@@ -12,5 +12,17 @@ Exercise 1-14.
 Write a program to print a histogram of the frequencies of different characters in its input.
 
 
+Exercise Arrays
+---------------------------------------------------------------------------------
+Write a program to count the input digit numbers, white space numbers and othere input numbers
+and then print the result
 
 
+Exercise 1-15. 
+---------------------------------------------------------------------------------
+Rewrite the temperature conversion program of Section 1.2 to use a function for conversion
+formula C = (5/9) * (F-32) : C - Celsius F - Fahrenheit
+
+Exercise 1-17. 
+---------------------------------------------------------------------------------
+Write a program to print all input lines that are longer than 80 characters.
