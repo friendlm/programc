@@ -9,9 +9,10 @@ int mystrend(char *s, char *t)
     while(*s++ != '\0')
     {
 	sp = s;
-	while(*sp++ == *t++)
+	for(; *sp == *t; sp++, t++)
 	    if(*t == '\0')
 		return 1;
+	--t;
     }
     return 0;
 }
