@@ -6,7 +6,8 @@ int mystrcmp(char *s, char *t);
 /* definition of the function */
 int mystrcmp(char *s, char *t)
 {
-    for( ; *s == *t; s++, i++)
+    printf("this is the second string compare file\n");
+    for( ; *s == *t; s++, t++)
 	if(*s == '\0')
 	    return 0;
     

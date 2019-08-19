@@ -7,7 +7,7 @@ int mystrcmp(char *s, char *t);
 int mystrcmp(char *s, char *t)
 {
     int i;
-
+    printf("this is the firest string compare file\n");
     for(i = 0; s[i] == t[i]; i++)
 	if(s[i] == '\0')
 	    return 0;
