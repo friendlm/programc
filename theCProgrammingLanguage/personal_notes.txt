@@ -1,0 +1,27 @@
+Chapter 1
+=======================================================
+2019.10.09 
+----------
+For variable, either has a value or has a range.
+
+VARIABLE
+       1.  var_01 = value
+       2.  x <= var_02 <= y
+For the range variable, it support two loops
+  For loop
+  --------
+  for( var = x; var <= y; var += steps)
+  {
+      //statements here
+  }
+  While Loop
+  ----------
+  int var_low;
+  int var_high;
+  int var_steps;
+
+  var_low = x;
+  while( var_low <= var_high )
+  {
+      var_low += var_steps;
+  }
