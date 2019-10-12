@@ -31,22 +31,22 @@ void rangefunfor()
     for(fahrenheit = 1; fahrenheit <= 300; fahrenheit += 20)
     {
 	celsius = 5 * (fahrenheit - 32) / 9;
-	printf("%d\t%d\n", fahrenheit, celsius);
+	printf("%-3d\t%d\n", fahrenheit, celsius);
     }
 }
 
 void rangefunwhile()
 {
     int high, low, steps;
-    int temp;
+    float temp;
      
     low = 1;
     high = 300;
     steps = 20;
     while( low <= high )
     {
+	temp = 5.0 * (low - 32.0) / 9.0;
+	printf("%3d\t%5.2f\n", low, temp);
 	low += steps;
-	temp = 5 * (low - 32) / 9;
-	printf("%d\t%d\n", low, temp);
     }
 }

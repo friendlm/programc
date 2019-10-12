@@ -25,3 +25,19 @@ For the range variable, it support two loops
   {
       var_low += var_steps;
   }
+
+Section 1.2
+---------------------------------------------------------------
+Knowledge Point
+1. Basic Data Types
+    char	1 byte
+    short	2 byte
+    int		2-4 byte
+    float	4 byte
+    double	8 byte
+
+2. Comments in C Language
+
+3. Formatted Print
+
+4. Float or Double Arithmetic Expression Calculation
